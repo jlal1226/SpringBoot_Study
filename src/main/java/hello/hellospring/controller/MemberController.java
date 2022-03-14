@@ -24,7 +24,7 @@ public class MemberController {
     public String createForm() {
         return "members/createMemberForm";
     }
-
+    // 회원 등록 -> post 방식으로 데이터가 날라오면 동작함
     @PostMapping("/members/new")
     public String create(MemberForm memberForm) {
         Member member = new Member();
