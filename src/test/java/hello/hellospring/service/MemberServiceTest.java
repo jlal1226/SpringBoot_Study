@@ -17,7 +17,8 @@ class MemberServiceTest {
     MemberService memberService;
     MemoryMemberRepository memberRepository;
 
-    @BeforeEach
+    // 테스트를 시작하기 전에
+   @BeforeEach
     public void beforeEach() {
         memberRepository = new MemoryMemberRepository();
         memberService = new MemberService(memberRepository);
